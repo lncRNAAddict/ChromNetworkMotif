@@ -5,8 +5,7 @@ ChromNetMotif is a python tool to extract enriched chromatin-state marked networ
 - `gtrieScanner`
 ## Input
 
-- `network file` with three columns, columns are separated by a single space. Each row in the file represents an undirected edge in the network, the first and second columns represent the two nodes in the edge, the third column represents the edge weight. Since `ChromNetworkMotif` only handles undirected and unweighted networks, the third column is always set to `1`. The nodes are indicated by integer values in the first and second column. 
-- `chromatin state file` contains the chromatin state of nodes. 
+
 
 4438 4439 1
 
@@ -54,18 +53,15 @@ You can simply download the following scripts from `PySmooth` GitHub page and pu
 
 ## Running `run_smooth.py`
 
-### Input Genotype File format
+### Input Network File format
 
-The First row is the header. Each row represents a unique marker.
+There is no header in the file. Each row in the file represents an undirected edge in the network.
 
-The genotype file MUST have the following columns:
+The network file MUST have the following 3 columns. Two consecutive columns must be separated by single space.
 
-- Column 1: Chromosome name.
-- Column 2: Genomic Position of the marker in the chromosome. For each chromosome,column 2 MUST already be sorted in ascending order.
-- Column 3: Identification id of the marker location. 
-- Column 4: Reference allele in the reference genome if known or can be left blank cell.
-- Column 5: Alternate allele if known or blank cell.
-- Column 6 and beyond: Genotype code for the individuals in the marker location. Four codes can be used. `A`: Reference parent homozygous, `B`: Alternatte parent homozygous, `H`: heterozygous, `U`: missing data.
+- Column 1: Node 1 in the edge. Must be integer.
+- Column 2: Node 2 in the edge. Must be integer.
+- Column 3: edge weight. Since `ChromNetworkMotif` only handles undirected and unweighted networks, the third column is always set to `1`. 
 
 A screeshot of a portion of an example input file is shown below
 
@@ -105,7 +101,7 @@ For each chromosome, PySmooth Generates the following outputs.
 
 - Three bar plot png files: `<output>_<chr>.stats.png`, `<output>_<chr>_singletons_stats.png`, and `<output>_<chr>_imputed_stats.png` bar plot files that contains `%` of homozygous, heterozygous calls for each individual for the raw genoytpe file, after singleton detection, and after error correction, respectively. Example images are shown below.
 
-![alt text](https://github.com/lncRNAAddict/PySmooth/blob/main/example/Slide3.PNG)
+![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/Figures/Slide3.PNG)
 
 - Three heatmap files: `<output>_<chr>.heatmap.png`, `<output>_<chr>_singletons_heatmap.png`, and `<output>_<chr>_imputed_heatmap.png` that visualize a color-coded image of different genotype codes in the original file, after singleton detection, and after error correction, respectively. Example images are shown below.
 
