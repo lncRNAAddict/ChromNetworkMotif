@@ -65,7 +65,7 @@ The network file MUST have the following 3 columns. Two consecutive columns must
 
 A screeshot of a portion of an example input file is shown below
 
-![Example Input Genotype File](https://github.com/lncRNAAddict/PySmooth/blob/main/example/GenotypeInput.PNG)
+![Example Input Genotype File](https://github.com/lncRNAAddict/ChromNetworkMotif/Figures/network_example_File.JPG')
 
 ### Running PySmooth
 
