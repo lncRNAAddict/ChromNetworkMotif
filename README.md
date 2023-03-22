@@ -82,4 +82,6 @@ The code above will extract chromatin state marked motifs of size 4 and generate
 
 ### Outputs
 
-- <output>.motifs.txt: This file contains the 
+- `<output>.motifs.txt`: This file contains the motifs present in the network. This file has four columns: column1: motif code,
+- `<output>.motifs.jpg`
+- 
