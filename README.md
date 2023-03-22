@@ -5,7 +5,8 @@ ChromNetMotif is a python tool to extract enriched chromatin-state marked networ
 - `gtrieScanner`
 ## Input
 
-- `network file` with three columns, columns are separated by a single space. Each row in the file represents an undirected edge in the network, the first and second columns represent the two nodes in the edge, the third column represents the edge weight. Since `ChromNetworkMotif` only handles undirected and unweighted networks, the third column is always set to `1`. The nodes are indicated by integer values in the first and second column.
+- `network file` with three columns, columns are separated by a single space. Each row in the file represents an undirected edge in the network, the first and second columns represent the two nodes in the edge, the third column represents the edge weight. Since `ChromNetworkMotif` only handles undirected and unweighted networks, the third column is always set to `1`. The nodes are indicated by integer values in the first and second column. 
+- `chromatin state file` contains the chromatin state of nodes. 
 
 4438 4439 1
 
