@@ -55,7 +55,7 @@ You can simply download the following scripts from `PySmooth` GitHub page and pu
 
 ### Input Network File format
 
-There is no header in the file. Each row in the file represents an undirected edge in the network.
+There is no header in the file. Each row in the file represents an undirected edge in the network. 
 
 The network file MUST have the following 3 columns. Two consecutive columns must be separated by single space.
 
@@ -68,53 +68,19 @@ A screeshot of a portion of an example input file is shown below
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/network_example_File.jpg)
 
 
+### Input Chromatin state File format
 
-### Running PySmooth
+There is a header in the file. The header is marked as `from_node,to_node,from_broad_state,to_broad_state`
+Each row in the file represents an undirected edge in the network with additional information about the chromatin state of the nodes in the edge.
 
-PySmooth takes the following arguments
+The network file MUST have the following 4 columns. Two consecutive columns must be separated by comma.
 
-- `-i` or `--input`: Name of the input genotype file. This MUST be provided.
-- '-o' or '--output': Prefix to name of output files to be generated. If not provided, default is `test`.
-- `-c` or `--chr`: list of chromosome names to perform analysis on. Names should be separated by comma (e.g `chr1,chr2,chr3`). Default is to run through all the chromosomes in the genotype file.
-- `-l` or `--lower`: Lowest threshold for identifying singletons. Default is 0.70.
-- `-u`or `--upper`: Highest threshold for identifying singletons. Default is 0.98.
-- `-g` or `--gap`: PySmooth iteratively identifies singletons starting with the highest threshold till the lowest threshold. This parameter is used to decreased the threshold at each iteration. Default is 0.02.
-- `-k` : number of nearest neighbors to be used to assign correct genotype to singleton or missing item. Default value is 30.
+- Column 1: Node 1 in the edge. Must be integer.
+- Column 2: Node 2 in the edge. Must be integer.
+- Column 3: Chromatin state of Node 1. Must be a string.
+- Column 4: Chromatin state of Node 2. Must be a string.
 
-First, change working directory to the folder where the `PySmooth` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
+A screeshot of a portion of an example input file is shown below
 
-`cd <path to where PySmooth scripts are stored>`
-
-Once the working directory is set, shown below are two examples of running `PySmooth`.
-
-`python run_smooth.py -i <path to the genotype file>/my_genotype_file.csv`
-
-The code above will analyze  each chromosome detected and generate all output files with prefix `test` in the folder `<path to the genotype file>`
-  
-`python run_smooth.py -i <path to the genotype file>/my_genotype_file.csv -o <path to output folder>/my_output -c chr1 -l 0.80 -u 0.98 -g 0.02`
-
-The code above will analyze for chromosome `chr1`and generate all output files with prefix `my_output` in the folder `<path to output folder>`.
-
-### Outputs
-
-For each chromosome, PySmooth Generates the following outputs.
-
-- Three summary csv files: `<output>_<chr>.stats.csv`, `<output>_<chr>_singletons_stats.csv`, and `<output>_<chr>_imputed_stats.csv` that contain `%` of homozygous, heterozygous calls for each individual for the raw genoytpe file, after singleton detection, and after error correction. Examples are shown below.
-
-- Three bar plot png files: `<output>_<chr>.stats.png`, `<output>_<chr>_singletons_stats.png`, and `<output>_<chr>_imputed_stats.png` bar plot files that contains `%` of homozygous, heterozygous calls for each individual for the raw genoytpe file, after singleton detection, and after error correction, respectively. Example images are shown below.
-
-![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/Figures/Slide3.PNG)
-
-- Three heatmap files: `<output>_<chr>.heatmap.png`, `<output>_<chr>_singletons_heatmap.png`, and `<output>_<chr>_imputed_heatmap.png` that visualize a color-coded image of different genotype codes in the original file, after singleton detection, and after error correction, respectively. Example images are shown below.
-
-![alt text](https://github.com/lncRNAAddict/PySmooth/blob/main/example/Slide2.PNG)
-
-- `<output>_<chr>_singletons.csv`: genotype file with singleton detected. Singletons are marked as `S`. 
-- `<output>_<chr>_imputed.csv`: genotype file after error correction.
-
-
-
-
-### References
-van Os,H. et al. (2005) SMOOTH: a statistical method for successful removal of genotyping errors from high-density genetic linkage data. Theor. Appl. Genet., 112, 187–94.
+![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/network_example_File.jpg)
 
