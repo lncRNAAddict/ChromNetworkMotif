@@ -82,5 +82,5 @@ The network file MUST have the following 4 columns. Two consecutive columns must
 
 A screeshot of a portion of an example input file is shown below
 
-![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/network_example_File.jpg)
+![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.jpg)
 
