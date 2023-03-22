@@ -84,3 +84,13 @@ A screeshot of a portion of an example input file is shown below
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.jpg)
 
+
+ChromNetworkMotif takes the following arguments
+
+- `-g` or `--network`: Name of the input network file. This MUST be provided.
+- `-c` or `--chromatin`: Name of the chromatin state file. This MUST be provided.
+- '-o' or '--output': Prefix to name of output files to be generated. If not provided, default is `test`.
+- `-n` : number of random networks to be generated fpr motif enrichment testing. Default is 100.
+- `-m` : number of nodes in the motif or motif size to be extracted. Default is 3.
+- `-p` : number of processors to be used. Default is 1.
+
