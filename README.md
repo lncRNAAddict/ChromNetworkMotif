@@ -76,7 +76,7 @@ Once the working directory is set, shown below is an example of running `ChromNe
 
 `python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv -c <path to the network file>/my_chromatin_file.csv -o <path to output folder>/my_output -n 500 -m 4 -p 4`
 
-The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output` in the folder `<path to output folder>`
+The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output` in the folder `<path to output folder>`. P-values and Z-scores are assigned based on 500 randomized networks. Computation will be done using 4 processors in parallel.
   
 
 
