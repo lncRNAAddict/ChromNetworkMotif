@@ -51,7 +51,7 @@ You can simply download the following scripts from `PySmooth` GitHub page and pu
 
 `PySmooth` can be executed by running the script `run_smooth.py`
 
-## Running `run_smooth.py`
+## Running `run_chromnetmotif.py`
 
 ### Input Network File format
 
