@@ -69,3 +69,5 @@ ChromNetworkMotif takes the following arguments
 - `-p` : number of processors to be used. Default is 1.
 
 ### Outputs
+
+- <output>.motifs.txt: This file contains the 
