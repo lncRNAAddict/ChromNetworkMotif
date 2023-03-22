@@ -65,8 +65,20 @@ ChromNetworkMotif takes the following arguments
 - `-c` or `--chromatin`: Name of the chromatin state file. This MUST be provided.
 - '-o' or '--output': Prefix to name of output files to be generated. If not provided, default is `test`.
 - `-n` : number of random networks to be generated fpr motif enrichment testing. Default is 100.
-- `-m` : number of nodes in the motif or motif size to be extracted. Default is 3.
+- `-m` : number of nodes in the motif or motif size to be extracted. Default is 3. It can only handle motif of size 3 and 4. 
 - `-p` : number of processors to be used. Default is 1.
+
+First, change working directory to the folder where the `ChromNetworkMotif` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
+
+`cd <path to where ChromNetworkMotif scripts are stored>`
+
+Once the working directory is set, shown below is an example of running `ChromNetworkMotif`.
+
+`python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv -c <path to the network file>/my_chromatin_file.csv -o <path to output folder>/my_output -n 500 -m 4 -p 4`
+
+The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output` in the folder `<path to output folder>`
+  
+
 
 ### Outputs
 
