@@ -25,7 +25,7 @@ You can simply download the following scripts from `PySmooth` GitHub page and pu
 
 `PySmooth` can be executed by running the script `run_smooth.py`
 
-## Running `run_chromnetmotif.py`
+## Running `run_ChromNetMotif.py`
 
 ### Input Network File format
 
