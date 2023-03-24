@@ -1,5 +1,5 @@
 # ChromNetMotif
-`ChromNetMotif` is a python tool to extract network motifs (of size 3 and 4) marked by chromatin states. The nodes in the network are marked by chromatin states.
+`ChromNetMotif` is a python tool to extract significantly enriched network motifs (of size 3 and 4) marked by chromatin states. The nodes in the network are marked by chromatin states.
 
 ## External dependencies
 - `gtrieScanner`
