@@ -72,6 +72,5 @@ An example file is shown below.
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. For example, for motif of size size 3 with the motif code `222`, an example `png` file may look like.
 
-
-![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/hela_motif_3.222.png)
+![chromatin-state marked motifs for motif of size 3 with motif code `222`](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/hela_motif_3.222.png)
 - `<output>.motif.results.txt`
