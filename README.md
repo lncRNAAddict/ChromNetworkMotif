@@ -66,7 +66,8 @@ The code above will extract chromatin state marked motifs of size 4 and generate
 
 ### Outputs
 
-- `<output>.motif.results.txt`: This file contains the chromatin-state marked motifs present in the network. This first column represent the motif code and the chromatin code that uniquely represents the chromatin states of the nodes in the motif. The next 3 or four columns represent the chromatin state of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the network, mean motif frequency in random networks. 
+- `<output>.motif.results.txt`: This file contains the chromatin-state marked motifs present in the network. This first column represent the chromatin code and motif code for the chromatin-state marked motif. Combination of these two columns represent one unique chromatin-state marked motif. The next 3 or four columns represent the chromatin state of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the network, mean motif frequency in random networks. 
+An example file is shown below.
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
 - `<output>.<motif_code>.jpg`
