@@ -73,3 +73,5 @@ An example file is shown below.
 
 ![chromatin-state marked motifs for motif of size 3 with motif code `222`](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/hela_motif_3.222.png)
 - `<output>.motifs.locations.txt`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. 
+
+![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_locations.JPG)
