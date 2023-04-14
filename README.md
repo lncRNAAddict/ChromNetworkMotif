@@ -7,7 +7,7 @@
 
 ## Installation and Dependencies
 
-PySmooth has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
+`ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
 
 PySmooth depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
 
@@ -23,13 +23,33 @@ You can simply download the following scripts from `PySmooth` GitHub page and pu
 - `ImputeMissingGenotype.py`
 - `run_smooth.py`
 
-`PySmooth` can be executed by running the script `run_smooth.py`
 
-## Running `run_ChromNetMotif.py`
+## Usage
 
+`ChromNetMotif` is executed using the python script `run_ChromNetMotif.py` in the python command line.
+
+`run_ChromNetkMotif.py` takes the following arguments
+
+- `-g` or `--network`: Name of the input chromatin state network file. This MUST be provided.
+- '-o' or `--output`: Prefix to name of output files to be generated. If not provided, default is `test`.
+- `-n` : number of random networks to be generated fpr motif enrichment testing. Default is 500.
+- `-m` : number of nodes in the motif or motif size to be extracted. Default is 3. It can only handle motif of size 3 and 4. 
+- `-p` : number of processors to be used. Default is 1.
+- `-t` : p-value threshold to detect statistically enriched motifs. Default value is 0.05.
+
+First, change working directory to the folder where the `ChromNetworkMotif` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
+
+`cd <path to where ChromNetworkMotif scripts are stored>`
+
+Once the working directory is set, shown below is an example of running `ChromNetworkMotif`.
+
+`python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv  -o my_output -n 500 -m 3 -p 4 -t 0.05`
+
+The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 will be used to identify significant motifs and for visualization.
+  
 ### Input Chromatin state network file format
 
-There is a header in the file. The header is marked as `from_node,to_node,from_broad_state,to_broad_state`
+The chromatin state network file contains a header, which should read as `from_node,to_node,from_broad_state,to_broad_state`.
 Each row in the file represents an undirected edge in the network with additional information about the chromatin state of the nodes in the edge.
 
 The network file MUST have the following 4 columns. Two consecutive columns must be separated by comma.
@@ -42,27 +62,6 @@ The network file MUST have the following 4 columns. Two consecutive columns must
 A screeshot of a portion of an example input file is shown below
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.jpg)
-
-
-ChromNetkMotif takes the following arguments
-
-- `-g` or `--network`: Name of the input network file. This MUST be provided.
-- '-o' or `--output`: Prefix to name of output files to be generated. If not provided, default is `test`.
-- `-n` : number of random networks to be generated fpr motif enrichment testing. Default is 100.
-- `-m` : number of nodes in the motif or motif size to be extracted. Default is 3. It can only handle motif of size 3 and 4. 
-- `-p` : number of processors to be used. Default is 1.
-
-First, change working directory to the folder where the `ChromNetworkMotif` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
-
-`cd <path to where ChromNetworkMotif scripts are stored>`
-
-Once the working directory is set, shown below is an example of running `ChromNetworkMotif`.
-
-`python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv -c <path to the network file>/my_chromatin_file.csv -o <path to output folder>/my_output -n 500 -m 4 -p 4`
-
-The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output` in the folder `<path to output folder>`. P-values and Z-scores are assigned based on 500 randomized networks. Computation will be done using 4 processors in parallel.
-  
-
 
 ### Outputs
 
