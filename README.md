@@ -56,7 +56,7 @@ First, change working directory to the folder where the `ChromNetworkMotif` scri
 
 Once the working directory is set, shown below is an example of running `ChromNetworkMotif`.
 
-`python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv  -o my_output -n 500 -m 3 -p 4 -t 0.05`
+`python run_ChromNetMotif.py -g <path to the network file>/my_network_file.csv  -o my_output -n 500 -m 3 -p 4 -t 0.05`
 
 The code above will extract chromatin-state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 will be used to identify significant motifs selected for visualization.
   
@@ -78,7 +78,7 @@ A screeshot of a portion of an example input file is shown below
 
 ### Outputs
 
-- `<output>.motif.results.txt`: This file contains the chromatin-state marked motifs present in the network. This first column represent the chromatin code and motif code for the chromatin-state marked motif. Combination of these two columns represent one unique chromatin-state marked motif. The next 3 or four columns represent the chromatin state of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the network, mean motif frequency in random networks. 
+- `<my_output>.motif.results.txt`: This file contains the chromatin-state marked motifs present in the network. This first column represent the chromatin code and motif code for the chromatin-state marked motif. Combination of these two columns represent one unique chromatin-state marked motif. The next 3 or four columns represent the chromatin state of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the network, mean motif frequency in random networks. 
 An example file is shown below.
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
