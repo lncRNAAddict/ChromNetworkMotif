@@ -89,12 +89,13 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 The first column in the `<my_output>.motif.results.txt` file represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or 4 columns represent the chromatin states of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the actual network, mean motif frequency in random networks. 
 
 
-- `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. For example, for motif of size size 3 with the motif code `222`, an example `png` file may look like as shown below. Motif code `222` represents the motif of size 3, where every node is connected to the other nodes. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. 
+- `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. Two example output images corresponding to two motif codes of motif size = 3 are shown below. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. 
+
+- For motif of size size 3 with the motif code `211`, there are three chromatin-state marked motifs.
 
 
 
-
-![chromatin-state marked motifs for motif of size 3 with motif code `222`](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_size_3_heatmaps.JPG)
+![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_size_3_heatmaps.JPG)
 - `<output>.motifs.locations.txt`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. 
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_location.JPG)
