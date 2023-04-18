@@ -4,9 +4,12 @@
 ## External dependencies
 - `gtrieScanner`
 
-`gtrieScanner` is a tool that extract subgraphs using the `g-trie` data structure. This tool can be installed from the github site https://github.com/ComplexNetworks-DCC-FCUP/gtrieScanner
+`gtrieScanner` is a tool that extract subgraphs using the `g-trie` data structure. This tool can be installed from the github site https://github.com/ComplexNetworks-DCC-FCUP/gtrieScanner.
+
+After installation, add the following lines in the `~/.bash_profile` or `~/.bashrc` file.
 
 `PATH=$PATH:<path to installation folder of gtrieScanner>`
+
 `export PATH`
 
 
