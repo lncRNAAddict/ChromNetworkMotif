@@ -13,7 +13,9 @@ PySmooth depends on the following python libraries. These libraries are already 
 - `matplotlib`
 
 
-`ChromNetMotif` requires that the tool `gtrieScanner` is already installed.
+`ChromNetMotif` requires that the following external tool  is already installed.
+
+- `gtrieScanner`
 
 `gtrieScanner` is a tool that extract subgraphs using the `g-trie` data structure. This tool can be installed from the github site https://github.com/ComplexNetworks-DCC-FCUP/gtrieScanner.
 
