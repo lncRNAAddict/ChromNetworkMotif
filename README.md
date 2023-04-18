@@ -29,7 +29,7 @@ For parallel processing, `ChromNetMotif` requires the following python package i
 - `Joblib`
 Installation instructions can be found here https://joblib.readthedocs.io/en/latest/
 
-## Installation and Dependencies
+## Installation
 
 
 You can simply download the following scripts from `PySmooth` GitHub page and put them in a single folder. 
