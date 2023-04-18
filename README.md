@@ -5,17 +5,15 @@
 
 `ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
 
-`ChromNetMotif` depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
+`ChromNetMotif` depends on the following python libraries. 
 
 - `numpy`
 - `Pandas`
 - `matplotlib`
+- `Joblib`: For parallel processing. 
+- `networkx`: For using network algorithms. 
 
-
-`ChromNetMotif` also requires the following python packages are installed.
-- `Joblib`: For parallel processing. Installation instructions can be found here https://joblib.readthedocs.io/en/latest/
-- `networkx`: For using network algorithms. Installation instructions can be found here https://networkx.org/
-
+Thelibraries `numpy`, `Pandas`, and `matplotlob` are already included in the anaconda distribution. Therefore, you do not need to install them. Installation instructions for `Joblib` and `networkx` can be found in https://joblib.readthedocs.io/en/latest/ and https://networkx.org/, respectively.
 
 `ChromNetMotif` requires that the following external tool  is already installed.
 
