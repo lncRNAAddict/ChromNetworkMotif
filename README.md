@@ -13,7 +13,7 @@
 - `Joblib`: For parallel processing. 
 - `networkx`: For using network algorithms. 
 
-Thelibraries `numpy`, `Pandas`, and `matplotlob` are already included in the anaconda distribution. Therefore, you do not need to install them. Installation instructions for `Joblib` and `networkx` can be found in https://joblib.readthedocs.io/en/latest/ and https://networkx.org/, respectively.
+The libraries `numpy`, `Pandas`, and `matplotlob` are already included in the anaconda distribution. Therefore, you do not need to install them. Installation instructions for `Joblib` and `networkx` can be found in https://joblib.readthedocs.io/en/latest/ and https://networkx.org/, respectively.
 
 `ChromNetMotif` requires that the following external tool  is already installed.
 
