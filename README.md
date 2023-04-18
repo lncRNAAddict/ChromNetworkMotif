@@ -99,3 +99,7 @@ The first column in the `<my_output>.motif.results.txt` file represents the chro
 - `<output>.motifs.locations.txt`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. 
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_location.JPG)
+
+## Example networks
+The folder `Data` contains a network file.
+
