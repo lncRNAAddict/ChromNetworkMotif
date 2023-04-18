@@ -25,6 +25,9 @@ After installation, add the following lines in the `~/.bash_profile` or `~/.bash
 
 `export PATH`
 
+For parallel processing, `ChromNetMotif` requires the following python package is installed.
+- `Joblib`
+Installation instructions can be found here https://joblib.readthedocs.io/en/latest/
 
 ## Installation and Dependencies
 
