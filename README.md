@@ -5,11 +5,16 @@
 
 `ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
 
-PySmooth depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
+`ChromNetMotif` depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
 
 - `numpy`
 - `Pandas`
 - `matplotlib`
+
+
+`ChromNetMotif` also requires the following python packages are installed.
+- `Joblib`: For parallel processing. Installation instructions can be found here https://joblib.readthedocs.io/en/latest/
+- `networkx`: For using network algorithms. Installation instructions can be found here https://networkx.org/
 
 
 `ChromNetMotif` requires that the following external tool  is already installed.
@@ -24,19 +29,14 @@ After installation, add the following lines in the `~/.bash_profile` or `~/.bash
 
 `export PATH`
 
-For parallel processing, `ChromNetMotif` requires the following python package is installed.
-- `Joblib`
-Installation instructions can be found here https://joblib.readthedocs.io/en/latest/
-
 ## Installation
 
 
-You can simply download the following scripts from `PySmooth` GitHub page and put them in a single folder. 
+You can simply download the following scripts from `ChromNetMotif` GitHub page and put them in a single folder. 
 
-- `utilities.py`
-- `smooth.py`
-- `ImputeMissingGenotype.py`
-- `run_smooth.py`
+- `utilities_parallel.py`
+- `motif_viz.py`
+- `run_ChromNetMotif.py`
 
 
 ## Usage
