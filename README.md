@@ -84,6 +84,9 @@ An example file is shown below.
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. For example, for motif of size size 3 with the motif code `222`, an example `png` file may look like as shown below. Motif code `222` represents the motif of size 3, where every node is connected to the other nodes. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. 
 
+![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_code.JPG)
+
+
 ![chromatin-state marked motifs for motif of size 3 with motif code `222`](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/hela_motif_3.222.png)
 - `<output>.motifs.locations.txt`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. 
 
