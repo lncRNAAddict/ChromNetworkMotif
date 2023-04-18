@@ -58,17 +58,17 @@ Once the working directory is set, shown below is an example of running `ChromNe
 
 `python run_chromnetmotif.py -g <path to the network file>/my_network_file.csv  -o my_output -n 500 -m 3 -p 4 -t 0.05`
 
-The code above will extract chromatin state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 will be used to identify significant motifs and for visualization.
+The code above will extract chromatin-state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 will be used to identify significant motifs selected for visualization.
   
 ### Input Chromatin state network file format
 
-The chromatin state network file contains a header, which should read as `from_node,to_node,from_broad_state,to_broad_state`.
+The chromatin state network file shoule contains a header that reads as `from_node,to_node,from_broad_state,to_broad_state`.
 Each row in the file represents an undirected edge in the network with additional information about the chromatin state of the nodes in the edge.
 
 The network file MUST have the following 4 columns. Two consecutive columns must be separated by comma.
 
-- Column 1: Node 1 in the edge. Must be in chromosome:start-end format.
-- Column 2: Node 2 in the edge. Must be in chromosome:start-end format.
+- Column 1: Node 1 in the edge. Must be in `chromosome:start-end format`.
+- Column 2: Node 2 in the edge. Must be in `chromosome:start-end format`.
 - Column 3: Chromatin state of Node 1. Must be a string.
 - Column 4: Chromatin state of Node 2. Must be a string.
 
