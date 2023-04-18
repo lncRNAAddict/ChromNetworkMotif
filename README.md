@@ -9,7 +9,6 @@ PySmooth depends on the following python libraries. These libraries are already 
 
 - `numpy`
 - `Pandas`
-- `Sklearn`
 - `matplotlib`
 
 
