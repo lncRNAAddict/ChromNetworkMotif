@@ -82,17 +82,14 @@ A screeshot of a portion of an example input file is shown below
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
 
-The second column represents the motif code for the chromatin-state marked motif. `ChromNetMotif` uses two unique motif codes for motifs of size 3 and 6 unique codes for motif of size 4 as shown below. 
+The second column in the `<my_output>.motif.results.txt` file represents the motif code for the chromatin-state marked motif. `ChromNetMotif` uses two unique motif codes for motifs of size 3 and 6 unique codes for motif of size 4 as shown below. 
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_code.JPG)
 
-The first column in the `<my_output>.motif.results.txt` represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or four columns represent the chromatin state of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the network, mean motif frequency in random networks. 
-
-
+The first column in the `<my_output>.motif.results.txt` file represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or 4 columns represent the chromatin states of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the actual network, mean motif frequency in random networks. 
 
 
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. For example, for motif of size size 3 with the motif code `222`, an example `png` file may look like as shown below. Motif code `222` represents the motif of size 3, where every node is connected to the other nodes. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. 
-
 
 
 ![chromatin-state marked motifs for motif of size 3 with motif code `222`](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/hela_motif_3.222.png)
