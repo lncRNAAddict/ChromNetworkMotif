@@ -2,7 +2,18 @@
 `ChromNetMotif` is a python tool to extract significantly enriched network motifs (of size 3 and 4) marked by chromatin states. The nodes in the network are marked by chromatin states.
 
 ## External dependencies
-- `gtrieScanner`
+
+`ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
+
+PySmooth depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
+
+- `numpy`
+- `Pandas`
+- `Sklearn`
+- `matplotlib`
+
+
+`ChromNetMotif` requires that the tool `gtrieScanner` is already installed.
 
 `gtrieScanner` is a tool that extract subgraphs using the `g-trie` data structure. This tool can be installed from the github site https://github.com/ComplexNetworks-DCC-FCUP/gtrieScanner.
 
@@ -15,14 +26,6 @@ After installation, add the following lines in the `~/.bash_profile` or `~/.bash
 
 ## Installation and Dependencies
 
-`ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
-
-PySmooth depends on the following python libraries. These libraries are already included in the anaconda distribution. Therefore, you do not need to install them.
-
-- `numpy`
-- `Pandas`
-- `Sklearn`
-- `matplotlib`
 
 You can simply download the following scripts from `PySmooth` GitHub page and put them in a single folder. 
 
