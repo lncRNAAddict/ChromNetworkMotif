@@ -1,19 +1,20 @@
 # ChromNetMotif
-`ChromNetMotif` is a python tool to extract significantly enriched network motifs (of size 3 and 4) marked by chromatin states. The nodes in the network are marked by chromatin states.
+
+`ChromNetMotif` is a tool that offers an easy-to-use Python command line interface to extract chromatin-state marked motifs from a chromatin interaction network data. The tool can extract occurrences and frequencies of different chromatin-state marked motifs but, also computes p-values and z-scores to quantify the statistical enrichment of the motifs in the network. The statistical metrics are computed by comparing to several random networks the tools generates internally. Visualization files are also generated that allow the user to interpret the motifs. Because the statistical enrichment calculation can be computationally time intensive, ChromNetMotif contains feature that allows analysis on random networks in parallel in a multicore processor environment. 
 
 ## External dependencies
 
-`ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
+`ChromNetMotif` has been tested with Python 3.8.12 version. It should work with Python >= 3.0 version. We recommend installing the anaconda Python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
 
 `ChromNetMotif` depends on the following python libraries. 
 
-- `numpy`
+- `Numpy`
 - `Pandas`
-- `matplotlib`
-- `Joblib`: For parallel processing. 
-- `networkx`: For using network algorithms. 
+- `Matplotlib`
+- `Joblib`: For multicore processing. 
+- `networkx`: For using network-related data structures and algorithms. 
 
-The libraries `numpy`, `Pandas`, and `matplotlob` are already included in the anaconda distribution. Therefore, you do not need to install them. Installation instructions for `Joblib` and `networkx` can be found in https://joblib.readthedocs.io/en/latest/ and https://networkx.org/, respectively.
+The libraries `Numpy`, `Pandas`, and `Matplotlob` are already included in the anaconda distribution. Therefore, you do not need to install them. Installation instructions for `Joblib` and `networkx` can be found in https://joblib.readthedocs.io/en/latest/ and https://networkx.org/, respectively.
 
 `ChromNetMotif` requires that the following external tool  is already installed.
 
