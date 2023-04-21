@@ -50,7 +50,7 @@ You can simply download the following scripts from `ChromNetMotif` GitHub page a
 - `-m` : number of nodes in the motif or motif size to be extracted. Default is 3. It can only handle motif of size 3 and 4. 
 - `-p` : number of processors to be used. Default is 1.
 - `-t` : p-value threshold to detect statistically enriched motifs. Default value is 0.05.
-- `-c` : minimum frequency in the real network for a chromatin-state marked motif to be counted as statistically enriched. Default value is 1. There might be some chromatin-state marked motifs which occur at very instances in the network. The user has the choice to disregard such motifs using this threshold.
+- `-f` : minimum frequency in the real network for a chromatin-state marked motif to be counted as statistically enriched. Default value is 1. There might be some chromatin-state marked motifs which occur at very instances in the network. The user has the choice to disregard such motifs using this threshold.
 
 First, change working directory to the folder where the `ChromNetworkMotif` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
 
