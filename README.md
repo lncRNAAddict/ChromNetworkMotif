@@ -74,8 +74,8 @@ The network file MUST have the following 4 columns. Two consecutive columns must
 - Column 4: Chromatin state of Node 2. Must be a string.
 
 A screeshot of a portion of an example input file is shown below
-<center>
-![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG)</center>
+
+![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG#center)
 *Example chromatin state network file*
 
 ### Outputs
