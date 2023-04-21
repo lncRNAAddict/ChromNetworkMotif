@@ -82,9 +82,9 @@ A screeshot of a portion of an example input file is shown below
 ![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG)
 
 
-### Outputs
+### Outputs files for extracted chromatin-state marked motifs
 
-`ChromNetMotif` generates three main output files: `<my_output>.motif.results.txt`, `<output>.<motif_code>.png`, and  `<output>.motifs.locations.csv`.  They are described below.
+`ChromNetMotif` generates two main output files: `<my_output>.motif.results.txt`, and  `<output>.motifs.locations.csv`.  They are described below.
 
 
 - `<my_output>.motif.results.txt`: This file contains all the extracted chromatin-state marked motifs present in the network. An example file is shown below.
@@ -107,6 +107,7 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 
 
 ### Chromatin-state marked motifs visualizations
+`ChromNetMotif` generates heatmaps to represent statistically enriched chromatin-state marked motifs based on the `p-value` and minimum `frequency` of the motif in the network.
 
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. Two example output images corresponding to two motif codes of motif size = 3 are shown below. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. In this file only the motifs which are statistically enriched in the 
 
