@@ -106,7 +106,7 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_location.JPG)
 
 
-### Chromatin-state marked motifs visualizations
+### Output visualization files for enriched Chromatin-state marked motifs 
 `ChromNetMotif` generates heatmaps to represent statistically enriched chromatin-state marked motifs based on the `p-value` and minimum `frequency` of the motif in the network.
 
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. Two example output images corresponding to two motif codes of motif size = 3 are shown below. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. In this file only the motifs which are statistically enriched in the 
