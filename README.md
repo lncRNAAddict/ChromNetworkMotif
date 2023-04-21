@@ -76,7 +76,7 @@ The network file MUST have the following 4 columns. Two consecutive columns must
 A screeshot of a portion of an example input file is shown below
 
 
-![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG#center)
+![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG)
 
 
 ### Outputs
@@ -87,6 +87,7 @@ A screeshot of a portion of an example input file is shown below
 
 The second column in the `<my_output>.motif.results.txt` file represents the motif code for the chromatin-state marked motif. `ChromNetMotif` uses two unique motif codes for motifs of size 3 and 6 unique codes for motif of size 4 as shown below. 
 
+`Motif codes for unique motifs of size 3 and 4`
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_code.JPG)
 
 The first column in the `<my_output>.motif.results.txt` file represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or 4 columns represent the chromatin states of the nodes in the motif. The subsequenct columns indicate p-value, z-score, motif frequency in the actual network, mean motif frequency in random networks. 
