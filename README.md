@@ -101,7 +101,7 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_code.JPG)
 
-- `<output>.motifs.locations.txt`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. Shown below is an example file that contains locations of chromatin-state marked motifs of size 3.
+- `<output>.motifs.locations.csv`: This file contains all instances of each chromatin-state marked motifs in the network. motif code, chromatin motif code, the interacting chromatin nodes. Shown below is an example file that contains locations of chromatin-state marked motifs of size 3.
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_locations.jpg)
 
