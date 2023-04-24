@@ -115,7 +115,7 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 
 
 
-![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_size_3_heatmaps.JPG)
+![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_size_3_heatmaps.jpg)
 
 
 ## Example networks
