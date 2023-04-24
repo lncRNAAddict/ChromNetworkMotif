@@ -120,5 +120,5 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 
 ## Example chromatin-state marked network data
 
-The folder `Data` contains an exampe chromatin-state marked chromatin interaction network file. The interactions are chromatin loops mediated by CTCF protein in human HeLa cell line. There are four chromatin states: `Active`, `Repressed`, `Poised`, and 'Weak`.  
+The folder `Data` contains an exampe chromatin-state marked chromatin interaction network file. The interactions are chromatin loops mediated by CTCF protein in human HeLa cell line. There are four chromatin states: `Active`, `Repressed`, `Poised`, and `Weak`.  
 
