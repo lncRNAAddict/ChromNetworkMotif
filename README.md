@@ -56,11 +56,11 @@ To execute `run_ChromNetkMotif.py`, change working directory to the folder where
 
 `cd <path to where ChromNetworkMotif scripts are stored>`
 
-Once the working directory is set, shown below is an example of running `ChromNetworkMotif`.
+Once the working directory is set, shown below is an example of executing `run_ChromNetMotif.py`.
 
 `python run_ChromNetMotif.py -g <path to the network file>/my_network_file.csv  -o my_output -n 500 -m 3 -p 4 -t 0.05`
 
-The code above will extract chromatin-state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 will be used to identify significant motifs selected for visualization.
+The code above will extract chromatin-state marked motifs of size 4 and generate all output files with prefix `my_output`. Computation will be done using 4 processors in parallel. P-value of 0.05 and minimum frequency of 50 will be used to identify significant motifs selected for visualization.
   
 ### Input Chromatin state network file format
 
