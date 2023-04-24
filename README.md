@@ -118,7 +118,7 @@ The second column in the `<my_output>.motif.results.txt` file represents the mot
 ![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_size_3_heatmaps.jpg)
 
 
-## Example chromatin-state marked chromatin interaction network data
+## Example chromatin-state marked network data
 
 The folder `Data` contains an exampe chromatin-state marked chromatin interaction network file. The interactions are chromatin loops mediated by CTCF protein in human HeLa cell line. There are four chromatin states: `Active`, `Repressed`, `Poised`, and 'Weak`.  
 
