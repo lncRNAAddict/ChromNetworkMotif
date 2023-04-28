@@ -6,6 +6,7 @@
 
 `ChromNetMotif` has been tested with Python 3.8.12 version and runs on `macOS` and `Linux` environments. It should work with Python >= 3.0 version. We recommend installing the anaconda Python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
 
+
 `ChromNetMotif` depends on the following python libraries. 
 
 - `Numpy`
