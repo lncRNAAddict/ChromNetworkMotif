@@ -32,7 +32,7 @@ After installation of `gtrieScanner`, add the following lines in the `~/.bash_pr
 ## Installation
 
 
-You can simply download the following scripts from `ChromNetMotif` GitHub page and put them in a single folder. 
+You can simply download the following scripts from `src` folder in `ChromNetMotif` GitHub page and put them in a single folder. 
 
 - `utilities_parallel.py`
 - `motif_viz.py`
