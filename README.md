@@ -54,7 +54,7 @@ You can simply download the following scripts from `src` folder in `ChromNetMoti
 - `-p` : number of processors to be used. Default is 1.
 - `-t` : p-value threshold to detect statistically enriched motifs. Default value is 0.05.
 - `-f` : minimum frequency in the real network for a chromatin-state marked motif to be counted as statistically enriched. Default value is 1. There might be some chromatin-state marked motifs which occur at very few instances in the network. The user has the choice to disregard such motifs using this threshold.
-- `-r`, or `--randomization`: method to generated randomized networks. options are `I` or `II`. `I`: degree preserving swapping of edges. `II`: only the chromatin states of the nodes are randomized. Default is `I`.
+- `-r`, or `--randomization`: method to generated randomized networks. options are `I` or `II`. `I`: swapping of edges while degree preserving in the network. `II`: only the chromatin states of the nodes are randomized. Default is `I`.
 
 To execute `run_ChromNetkMotif.py`, change working directory to the folder where the `ChromNetworkMotif` scripts are stored. You can do that by simply typing the following command in the `terminal`, or `command prompt`, or  `anaconda command prompt` depending on your python installation or OS.
 
