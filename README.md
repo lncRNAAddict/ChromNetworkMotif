@@ -29,6 +29,8 @@ After installation of `gtrieScanner`, add the following lines in the `~/.bash_pr
 
 `export PATH`
 
+To make effective the changes in the `~/.bash_profile` or `~/.bashrc` file, execute `source ~/.bash_profile` or `source ~/.bashrc`.
+
 ## Installation
 
 
