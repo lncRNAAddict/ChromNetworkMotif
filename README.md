@@ -98,7 +98,8 @@ A screeshot of a portion of an example input file is shown below
 
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_results.JPG)
 
-The second column in the `<my_output>.motif.results.csv` file represents the motif code for the chromatin-state marked motif. The first column in the `<my_output>.motif.results.csv` file represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or 4 columns represent the chromatin states of the nodes in the motif. The subsequenct columns indicate p-value, motif frequency in the actual network, mean motif frequency in random networks. 
+The second column in the `<my_output>.motif.results.csv` file represents the motif code for the chromatin-state marked motif. The first column in the `<my_output>.motif.results.csv` file represents the chromatin code that describes the chromatin states of the nodes involved in the motif. Combination of the first two columns in the file represent one unique chromatin-state marked motif. The next 3 or 4 columns represent the chromatin states of the nodes in the motif. The next three subsequenct columns indicate p-value, motif frequency in the actual network $N_real$, mean motif frequency in random networks. 
+The final column represents `log(N_{real}/N_`
 
 `ChromNetMotif` uses two unique motif codes for motifs of size 3 and 6 unique codes for motif of size 4 as shown below. 
 
