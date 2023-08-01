@@ -68,8 +68,9 @@ The code above will extract chromatin-state marked motifs of size 4 and generate
   
 ### Input Chromatin state network file format
 
-The chromatin state network file shoule contains a header that reads as `from_node,to_node,from_broad_state,to_broad_state`.
-Each row in the file represents an undirected edge in the network with additional information about the chromatin state of the nodes in the edge.
+The chromatin state network file shoule contains a header. The header line contains the names of the four columns separated by commas. An example header line can be “from_node,to_node,from_broad_state,to_broad_state”. Note that the name of the header doesn’t matter as long as the coloumn order is maintained.Each row in the file represents an undirected edge in the network with additional information about the chromatin state of the nodes in the edge.
+
+
 
 The network file MUST have the following 4 columns. Two consecutive columns must be separated by comma.
 
