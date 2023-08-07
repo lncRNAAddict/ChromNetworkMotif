@@ -84,6 +84,7 @@ A screeshot of a portion of an example input file is shown below
 
 `Example chromatin state network file`
 
+
 ![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG)
 
 
