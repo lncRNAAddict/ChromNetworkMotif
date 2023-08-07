@@ -117,7 +117,7 @@ The second column in the `<my_output>.motif.results.csv` file represents the mot
 
 - `<output>.<motif_code>.png`: For each `motif code`, one `png` file to vizualize the chromatin-state marked motifs will be generated. Two example output images corresponding to two motif codes of motif size = 3 are shown below. Each row in the heatmap represents a chromatin-state marked motif. In the example heatmap shown below, there are four possible chromatin states: `weak`, `repressed`, `poised`, and `active` which are color coded. In this file only the motifs which are statistically enriched in the real netork based on `p-value` and `frequency` count are shown.  
 
-- For example in motif of size size 3 with the motif code `211` and `222`, there are 3 and 18 chromatin-state marked motifs which are enriched in the chromatin interaction network.
+- For example in motif of size size 3 with the motif code `211` and `222`, there are 2 and 9 chromatin-state marked motifs which are enriched in the chromatin interaction network.
 
 
 
