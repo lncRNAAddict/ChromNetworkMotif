@@ -112,6 +112,7 @@ The second column in the `<my_output>.motif.results.csv` file represents the mot
 ![alt text](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/motif_locations.jpg)
 
 
+
 ### Output visualization files for enriched Chromatin-state marked motifs 
 `ChromNetMotif` generates heatmaps to represent statistically enriched chromatin-state marked motifs based on the `p-value` and minimum `frequency` of the motif in the network.
 
