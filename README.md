@@ -2,7 +2,6 @@
 
 `ChromNetMotif` is a tool that offers an easy-to-use Python command line interface to extract chromatin-state marked motifs from a chromatin interaction network data. The tool can extract occurrences and frequencies of different chromatin-state marked motifs.It also computes p-values and z-scores to quantify the statistical enrichment of the motifs in the network. The statistical metrics are computed by comparing to several random networks the tools generates internally. Visualization files are also generated that allow the user to interpret the motifs. Because the statistical enrichment calculation requires several random networks it can be computationally time intensive. ChromNetMotif contains feature that allows analysis on random networks in parallel in a multicore processor environment. 
 
-
 ## External dependencies
 
 `ChromNetMotif` has been tested with Python 3.8.12 version and runs on `macOS` and `Linux` environments. It should work with Python >= 3.0 version. We recommend installing the anaconda Python distributon. Download anaconda python distribution from https://www.anaconda.com/products/distribution and install following the instructions provided.
