@@ -87,7 +87,6 @@ A screeshot of a portion of an example input file is shown below
 
 ![](https://github.com/lncRNAAddict/ChromNetworkMotif/blob/main/Figures/chromatin_state_file.JPG)
 
-
 ### Outputs files for extracted chromatin-state marked motifs
 
 `ChromNetMotif` generates two main output files: `<my_output>.motif.results.txt`, and  `<output>.motifs.locations.csv`.  They are described below.
